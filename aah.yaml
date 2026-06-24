@@ -1,0 +1,6 @@
+name: aah-multiroute-runtime
+services:
+  - name: multiroute
+    dockerfile: Dockerfile
+    target: agentcore_runtime
+    port: 8080
