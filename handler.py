@@ -15,7 +15,7 @@ import boto3, json, time
 
 app = BedrockAgentCoreApp()
 bedrock = boto3.client("bedrock-runtime", region_name="us-east-1")
-MODEL_ID = "us.anthropic.claude-sonnet-4-6-20250929-v1:0"   # cross-region inference 필수
+MODEL_ID = "us.anthropic.claude-sonnet-4-6"   # cross-region inference profile (정확한 id)
 
 
 def _log(route, **extra):
